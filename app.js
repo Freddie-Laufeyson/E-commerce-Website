@@ -9,7 +9,7 @@ const products = [
     colors: [
       {
         code: "Standing Desk",
-        img: "./img/desk 2.webp",
+        img: "./img/desk2.webp",
       },
     ],
   },
@@ -20,7 +20,7 @@ const products = [
     colors: [
       {
         code: "Standing Desk",
-        img: "./img/desk 2.webp",
+        img: "./img/desk2.webp",
       },
     ],
   },
@@ -31,7 +31,7 @@ const products = [
     colors: [
       {
         code: "Standing Desk",
-        img: "./img/desk 2.webp",
+        img: "./img/desk2.webp",
       },
     ],
   },
@@ -42,7 +42,7 @@ const products = [
     colors: [
       {
         code: "Standing Desk",
-        img: "./img/desk 2.webp",
+        img: "./img/desk2.webp",
       },
     ],
   },
@@ -53,7 +53,7 @@ const products = [
     colors: [
       {
         code: "Standing Desk",
-        img: "./img/desk 2.webp",
+        img: "./img/desk2.webp",
       },
     ],
   },
