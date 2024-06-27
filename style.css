@@ -24,12 +24,13 @@ a {
   text-decoration: none;
 }
 
-.links {
+.link {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  font-family: "Lato", sans-serif
 }
 
 .link a {
@@ -39,6 +40,61 @@ a {
 
 .link a:hover {
   color: var(--white);
+}
+
+.link h1 {
+  position: relative;
+  width: 10em;
+  height: 1.5em;
+  text-align: center;
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(3, 3, 3, .5);
+  border: none;
+  transition: color .2s linear,
+        box-shadow .3s linear,
+        background-color .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.link h1:focus,
+.link h1:hover {
+  box-shadow: 0 0 110px #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #111;
+  font-weight: 500;
+}
+
+.link h1:focus:before,
+.link h1:hover:before,
+.link h1:focus:after,
+.link h1:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.link h1:before,
+.link h1:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width, left, 250ms cubic-bezier(0.25, .8, .25, 1);
+}
+
+.link h1:before {
+  top: -2px;
+}
+
+.link h1:after {
+  bottom: -2px;
 }
 
 .search {
@@ -250,6 +306,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+  background-color: #000000;
 }
 
 .feature {
@@ -268,10 +325,12 @@ a {
   font-size: 20px;
   font-weight: 600;
   margin: 20px;
+  color: #fff;
+  font-family: "Lato", sans-serif
 }
 
 .featureDesc {
-  color: gray;
+  color: rgb(180, 177, 177);
   width: 50%;
   height: 100px;
 }
@@ -741,3 +800,15 @@ footer {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mail {
+  background-color: black;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  padding: 7px 10px;
+}
